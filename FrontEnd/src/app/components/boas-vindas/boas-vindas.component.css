@@ -1,0 +1,27 @@
+.pop-up {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 50vh;
+    align-self: center;
+    justify-self: center;
+    background-color: #fff;
+    border: 2px solid #777777;
+    border-radius: 5px;
+}
+
+.btn-close {
+    position: absolute;
+    align-self: flex-end;
+}
+
+.pop-up__header {
+    background-color: #00000015;
+    border-bottom: 0.5px solid #acabab;
+    padding: 1vh;
+}
+
+.pop-up__text {
+    padding: 1vh;
+    color: var(--blue);
+}

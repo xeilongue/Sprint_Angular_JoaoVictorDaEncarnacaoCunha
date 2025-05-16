@@ -1,0 +1,35 @@
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__button {
+    background-image: url("/more.png");
+    width: 3vh;
+    height: 3vh;
+    margin-left: 0.5vh;
+    margin-top: 0.5vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #ffff;
+}
+
+.menu {
+    width: 10vw;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.link {
+    background-color: rgb(53, 53, 53, 0.3);
+    width: 100%;
+    padding: 1vw;
+    color: var(--blue);
+    text-decoration: none;
+}

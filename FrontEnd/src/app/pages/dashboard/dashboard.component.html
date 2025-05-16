@@ -1,0 +1,38 @@
+<div class="buttons__nav">
+    <app-menu></app-menu>
+    <button (click)="logout()" class="button__logout"></button>
+</div>
+
+<section class="main__dashboard">
+
+    <h1 class="dashboard__title">Dashboard Ford</h1>
+
+    <div class="cards">
+
+        <div class="card shadow border border-black">
+            <h2 class="card__title">Veículos</h2>
+            <div class="card__content">
+                <select class="dashboard__select" (change)="onChangeSelect($event)">
+                    @for (v of veiculos; track v.id) {
+                    <option value="{{ v.id }}">{{ v.vehicle }}</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <app-card [titulo]="'Total de Vendas'" [valor]="veiculoSelecionado.volumetotal" />
+        <app-card [titulo]="'Conectados'" [valor]="veiculoSelecionado.connected" />
+        <app-card [titulo]="'Upd. Software'" [valor]="veiculoSelecionado.softwareUpdates" />
+
+    </div>
+
+    <div class="img__carro">
+        <img class="car-img" src="{{ veiculoSelecionado.img }}" alt="">
+    </div>
+
+    <div>
+        <app-car-table [vin]="veiculoSelecionado.vin" [odometro]="vinInfos.odometro"
+            [nivelCombustivel]="vinInfos.nivelCombustivel" [status]="vinInfos.status" [lat]="vinInfos.lat"
+            [long]="vinInfos.long" />
+    </div>
+</section>

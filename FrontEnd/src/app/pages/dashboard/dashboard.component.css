@@ -1,0 +1,74 @@
+@import "../../components/card/card.component.css";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 100vw;
+}
+
+.buttons__nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6vh 0.6vw;
+}
+
+.button__logout {
+  background-image: url("/logout.png");
+  width: 4vh;
+  height: 3.2vh;
+  margin-left: 0.5vh;
+  margin-top: 0.5vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: #ffff;
+}
+
+.main__dashboard{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard__title {
+  color: var(--blue);
+  font-size: 5vh;
+}
+
+.dashboard__select {
+  display: flex;
+  
+}
+
+.cards {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.card__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+
+.card__content > select {
+  font-size: 2vh;
+  width: 90%;
+}
+
+.img__carro {
+  display: flex;
+  justify-content: center;
+  height: 35vh;
+}
+
+.car-img {
+  height: 100%;
+}

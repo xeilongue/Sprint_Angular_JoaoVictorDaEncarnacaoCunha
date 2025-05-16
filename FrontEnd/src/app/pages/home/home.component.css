@@ -1,0 +1,41 @@
+:host {
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6vh 0.6vw;
+}
+
+.main__img {
+    width: 80%;
+}
+
+app-boas-vindas {
+    position: absolute;
+}
+
+.button__logout {
+    background-image: url("/logout.png");
+    width: 4vh;
+    height: 3.2vh;
+    margin-left: 0.5vh;
+    margin-top: 0.5vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #ffff;
+}
